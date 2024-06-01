@@ -1,4 +1,6 @@
-##Description
+# Description
+
+
 Movie App with React Native and OMDb API
 This React Native movie app integrates with the OMDb (Open Movie Database) API to provide users with a seamless experience for searching and viewing movie details. Key features include:
 
