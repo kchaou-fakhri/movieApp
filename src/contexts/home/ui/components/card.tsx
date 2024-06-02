@@ -8,7 +8,7 @@ import {COLORS} from '@utils/colors';
 // Define the props for the Card component
 interface Props {
   movie: Movie; // The movie object containing details like Poster, Type, and Title
-  onPressMovie: (id: string) => void; // Function to call when the card is pressed
+  onPressMovie: () => void; // Function to call when the card is pressed
 }
 
 /**
@@ -31,36 +31,37 @@ export const Card: React.FC<Props> = (props: Props): JSX.Element => {
 
 const styles = StyleSheet.create({
   cardContainer: {
-    width: getDeviceDimensions().width / 2 - 50,
-    height: 220,
+    width: getDeviceDimensions().width / 2 - 20,
+    height: 250,
     backgroundColor: COLORS.primary,
     alignItems: 'center',
     borderColor: COLORS.secondary,
-    borderWidth: 2,
-    margin: 15,
+    borderWidth: 1,
+    margin: 5,
     borderRadius: 10,
   },
   image: {
-    marginTop: 10,
-    width: 150,
-    height: 130,
-    resizeMode: 'contain',
+    width: '100%',
+    height: 150,
+    resizeMode: 'cover',
+    borderTopRightRadius: 10,
+    borderTopLeftRadius: 10,
   },
   infoContainer: {
     width: '100%',
-    marginTop: 10,
+    marginTop: 20,
   },
   title: {
-    color: COLORS.background.default,
-    textAlign: 'center',
+    color: COLORS.text.hint,
+    textAlign: 'left',
     fontSize: 13,
-    fontWeight: '700',
     padding: 2,
+    paddingLeft: 10,
   },
   type: {
     color: COLORS.secondary,
     fontSize: 13,
-    fontWeight: '700',
-    paddingLeft: 25,
+    fontWeight: '500',
+    paddingLeft: 10,
   },
 });

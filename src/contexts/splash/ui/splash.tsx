@@ -7,6 +7,7 @@ import {useNavigation} from '@react-navigation/native';
 import {ROUTES} from '@routeNavigation/routes';
 import {StackNavigationProp} from '@react-navigation/stack';
 import {RootStackParamList} from '@routeNavigation/navigationParams';
+import {epicLoadMetaData} from '@contexts/home/useCases/epic';
 
 interface Props {
   navigation: StackNavigationProp<RootStackParamList>;
@@ -21,6 +22,9 @@ export const Splash: React.FC<Props> = (props: Props): JSX.Element => {
 
   // Navigate to the home screen after a delay of 2.5 seconds
   useEffect(() => {
+    // Load metadata on component mount
+    epicLoadMetaData();
+
     const timer = setTimeout(() => {
       props.navigation.navigate(ROUTES.HOME_SCREEN);
     }, 2500);

@@ -19,3 +19,6 @@ export const MOVIES_SUBJECTS = [
     'War',
     'Western'
 ];
+
+export const STORY_LINE = 'Store Line'
+export const SEARCH_PLACEHOLDER = "Search..."
