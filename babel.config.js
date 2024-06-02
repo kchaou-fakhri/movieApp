@@ -16,6 +16,7 @@ module.exports = {
           '@constants': './src/constants/',
           '@model': './src/model/',
           '@service': './src/service/',
+          '@helpers': './src/helpers/',
         },
       },
     ],
