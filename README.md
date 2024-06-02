@@ -54,6 +54,11 @@ npm run ios
 yarn ios
 ```
 
+
+## Screenshot
+![Screenshot_1717322501](https://github.com/kchaou-fakhri/movieApp/assets/69482318/ae407f43-7cc2-4102-909e-a3bfa023291f)
+![Screenshot_1717325576](https://github.com/kchaou-fakhri/movieApp/assets/69482318/6e8b0c72-82a3-4dc5-a95e-5d16f39d59c3)
+
 If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
